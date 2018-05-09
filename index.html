@@ -15,14 +15,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title class="red.accent-1">Document</title>
-
-
+    <script language="javascript" type="text/javascript">
+        function enviar(pagina) {
+            document.nombreDelFormulario.action = pagina;
+            document.nombreDelFormulario.submit();
+        }
+    </script>
 
 </head>
 
 <body>
     <div class="container">
         <div class="chips">
+            <hr>
             <div class="row">
                 <h5 class="center">Ingresar Dinero</h5>
                 <div class="col s10">
@@ -31,7 +36,10 @@
                 <div class="col s2">
                     <button class="btn-floating btn-large waves-effect waves-light red">
                         <i class="material-icons">done</i>
+<<<<<<< HEAD
 
+=======
+>>>>>>> 0f6185e6b0aad54d9a6132707ba45688010ad9d0
                     </button>
                 </div>
             </div>
@@ -42,9 +50,10 @@
         <div class="collection">
             <div class="row">
                 <p class="col s12">
-                    <button button class="btn-floating btn-large waves-effect waves-light red">
-                        <i class="material-icons">add</i>
-                    </button>
+                    <form name="nombreDelFormulario" action="" method="post">
+                        <button button class="btn-floating btn-large waves-effect waves-light red" type="button" onClick="enviar('https://rawgit.com/Facundopeloso/Mock-Upp-Materealize/master/addcaja.html')">
+                            <i class="material-icons">add</i>
+                        </button>
                 </p>
             </div>
         </div>
@@ -54,7 +63,6 @@
                 <i class="material-icons">money_off</i>
 
         </div>
-
 
 </body>
 
