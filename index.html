@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
@@ -10,11 +11,14 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
-
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title class="red.accent-1">Document</title>
+    <link type="text/css0" rel="stylesheet" href="css/letras.css" media="stylesheet">
     <script language="javascript" type="text/javascript">
         function enviar(pagina) {
             document.nombreDelFormulario.action = pagina;
@@ -26,43 +30,63 @@
 
 <body>
     <div class="container">
-        <div class="chips">
-            <hr>
-            <div class="row">
-                <h5 class="center">Ingresar Dinero</h5>
-                <div class="col s10">
-                    <input type="text">
-                </div>
-                <div class="col s2">
-                    <button class="btn-floating btn-large waves-effect waves-light red">
-                        <i class="material-icons">done</i>
 
-                    </button>
-                </div>
+        <div class="row">
+            <h5 class="center">Ingresar Dinero</h5>
+            <div class="col s10">
+                <input placeholder="$$$ MONTO $$$" type="text">
+            </div>
+            <div class="col s2">
+                <button class="btn-floating btn-large waves-effect waves-light red">
+                    <i class="material-icons">done</i>
+
+                </button>
+
             </div>
         </div>
 
+        <hr>
 
         <h5 class="center">CAJAS</h5>
         <div class="collection">
             <div class="row">
                 <p class="col s12">
-                        <li>CAJA IphoneX:$32000</li>
-                        <button button class="btn-floating btn-large waves-effect waves-light red" type="button" onClick="enviar('file:///C:/Users/sala23Pc11/Desktop/Materialize/Experimento/addcaja.html')">
+                    <p>
+                        <div>
+                            <strong><h5 style="margin-left: 15px;">Iphone X $32.000</h5></strong>
+                        <div class="w3-light-grey w3-round-xlarge">
+                            <div class="w3-round-xlarge w3-teal" style="height:24px;width:80%;opacity:0.8%;"><h5 class="center">%80</h5></div>
+                        </div>
+                    </div>
+                    </p>
+                    <a href="addcaja.html">
+                        <button button class="btn-floating btn-large waves-effect waves-light red" type="button" onClick="enviar('addcaja.html')">
                             <i class="material-icons">add</i>
                         </button>
-                    
+                    </a>
+
                 </p>
             </div>
         </div>
 
         <div>
             <form name="nombreDelFormulario" action="" method="post">
-                <button class="btn-floating btn-large waves-effect waves-light red" type="button" onClick="enviar('file:///C:/Users/sala23Pc11/Desktop/Materialize/Experimento/gastos.html')">
-                    <i class="material-icons">money_off</i>
-                </button>
+                <a href="gastos.html">
+                    <button class="btn-floating btn-large waves-effect waves-light red" type="button" onClick="enviar('gastos.html')">
+                        <i class="material-icons">money_off</i>
+                    </button>
+                </a>
+
+                <a href="trofeos.html">
+                    <button class="btn-floating btn-large waves-effect waves-light red" type="button" onClick="enviar('trofeos.html')">
+                        <i class="material-icons">stars</i>
+                    </button>
+                </a>
+
             </form>
         </div>
+    </div>
+
 
 </body>
 

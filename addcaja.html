@@ -15,7 +15,13 @@
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-
+    <title class="red.accent-1">Document</title>
+    <script language="javascript" type="text/javascript">
+        function enviar(pagina) {
+            document.nombreDelFormulario.action = pagina;
+            document.nombreDelFormulario.submit();
+        }
+    </script>
 
 </head>
 
@@ -23,6 +29,14 @@
     <div class="container">
         <div class="chips">
             <div class="row">
+                <form name="nombreDelFormulario" action="" method="post">
+                    <a href="index.html">
+                        <button button class="btn-floating btn-large waves-effect waves-light red" type="button" onClick="enviar('index.html')">
+                            <i class="material-icons">arrow_back</i>
+                        </button>
+                    </a>
+
+                </form>
                 <h5 class="center"> Agregar Caja</h5>
                 <div class="col s10">
                     Nombre:
@@ -38,7 +52,7 @@
                 </div>
                 <div class="col s2">
 
-                    <button class="btn-floating btn-large waves-effect waves-light red">
+                    <button button class="btn-floating btn-large waves-effect waves-light red" type="button" onClick="enviar('index.html')">
                         <i class="material-icons">done</i>
                     </button>
                 </div>
