@@ -1,0 +1,17 @@
+<p>&nbsp;</p>
+<!--Import Google Icon Font-->
+<p>&nbsp;</p>
+<!--Import materialize.css--><!--Let browser know website is optimized for mobile-->
+<p>&nbsp;</p>
+<div class="container">
+<div class="chips"><hr />
+<div class="row">
+<h5 class="center">Salad de trofeos</h5>
+<hr />
+<div class="col s10"  ><strong>NIVEL:10</strong><hr /></div>
+  <div class="col s10">Objetivo: Iphone X $32.000 <button class="btn" >%100 Finalizado </button></div>
+  <hr>
+<div class="col s2"><button class="btn-floating btn-large waves-effect waves-light red"> <em class="material-icons">keyboard_backspace</em> </button></div>
+</div>
+</div>
+</div>
